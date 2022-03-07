@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Q4
+        </title>
+        <style>
+            td{
+                border: 1px dotted purple;
+            }
+            #discount{
+                background-color: salmon;
+                display:inline;
+            }
+            .ref{
+                color:#cccccc;
+                font-size:7px;
+                font-style: italic;
+            }
+        </style>
+    </head>
+    <body>
+        <p id="discount">Today's discount: %<span id="discount-value">17</span></p>
+        <table>
+            <tr>
+                <td id="item1">
+                    <p class="ref">photo from: uline.com</p>
+                    <img src="https://img.uline.com/is/image/uline/S-4061?$Mobile_Zoom$" width="250" />
+                    <p>Price: $<span id="item1-price">120</span></p>
+                    <script>
+                    var discVal = document.getElementById("discount-value");
+                    var item1Val = document.getElementById("item1-price");
+                    var item1Disc = item1Val.innerHTML - (item1Val.innerHTML * (discVal.innerHTML/100));
+                    item1Val.innerHTML = item1Disc.toFixed(2);
+                    </script>
+                </td>
+
+                <td id="item2">
+                    <p class="ref">photo from: drawingnow.com</p>
+                    <img src="https://www.drawingnow.com/file/videos/image/1376122111.jpg" width="250" />
+                    <p>Price: $<span id="item2-price">12</span></p>
+                    <script>
+                    var discVal = document.getElementById("discount-value");
+                    var item2Val = document.getElementById("item2-price");
+                    var item2Disc = item2Val.innerHTML - (item2Val.innerHTML * (discVal.innerHTML/100));
+                    item2Val.innerHTML = item2Disc.toFixed(2);
+                    </script>
+                </td>
+                
+                <td id="item3">
+                    <p class="ref">photo from: drawinghowtodraw.com</p>
+                    <img src="https://www.drawinghowtodraw.com/stepbystepdrawinglessons/wp-content/uploads/2010/01/10cubes.png" width="250" />
+                    <p>Price: $<span id="item3-price">31</span></p>
+                    <script>
+                    var discVal = document.getElementById("discount-value");
+                    var item3Val = document.getElementById("item3-price");
+                    var item3Disc = item3Val.innerHTML - (item3Val.innerHTML * (discVal.innerHTML/100));
+                    item3Val.innerHTML = item3Disc.toFixed(2);                    
+                    </script>
+                </td>
+            </tr>
+        </table>
+    </body>
+    <script>
+
+    </script>
+</html>
