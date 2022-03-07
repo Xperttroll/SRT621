@@ -1,0 +1,16 @@
+body {
+    color: white;
+    margin-top: 40px;
+}
+p {
+    color: black;
+}
+.speech {
+    font-family: 'Open Sans', 'Segoe UI', sans-serif;
+}
+.speech2 {
+    font-family: 'Mochiy Pop P One', 'Verdana', Georgia, sans-serif;
+}
+.speech3 {
+    font-family: 'Poppins', 'Calibri', Arial, sans-serif;
+}

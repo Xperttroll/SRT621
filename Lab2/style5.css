@@ -1,0 +1,32 @@
+body {
+    color: white;
+}
+p {
+    color: white;
+    padding: 20px;
+    font-family: 'Open Sans', 'Segoe UI', Arial, sans-serif;
+    font-weight: bolder;
+}
+.box1 {
+    position: fixed;
+    background-color: black;
+    height: 400px;
+    width: 100%;
+    margin-top: 25px;
+}
+.box2 {
+    position: fixed;
+    background-color: rgb(0, 140, 255);
+    height: 100px;
+    width: 30%;
+    margin-top: 5px;
+    left: 40%;
+}
+.box3 {
+    position: fixed;
+    background-color: red;
+    height: 300px;
+    width: 50%;
+    margin-top: 105px;
+    left: 30%
+}

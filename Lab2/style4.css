@@ -1,0 +1,13 @@
+body {
+    color: white;
+    font-family: 'Open Sans', 'Segoe UI', Arial, sans-serif;
+    margin-top: 40px;
+}
+p {
+    color: black;
+}
+a {
+    color: orange;
+    text-decoration: none;
+    border: 1px solid  green;
+}
