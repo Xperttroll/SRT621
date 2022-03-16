@@ -1,0 +1,73 @@
+body {
+    background: linear-gradient(-45deg, #6d6d6d, #2e2e2e, #1f1f1f, #000000);
+    background-size: 200% 200%;
+    animation: gradient 5s infinite;
+    height: 100vh;
+
+    color: white;
+    font-family: 'Open Sans', 'Segoe UI', Arial, sans-serif;
+    font-size: large;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 40px;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+#name {
+    display: inline;
+    padding: 10px;
+    border-spacing: 10px;
+}
+
+.row {
+    height: 10px;
+}
+
+#gameboard {
+    float: left;
+    margin-left: 10%;
+}
+
+.board {
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    color: black;
+    font-size: xx-large;
+}
+
+.opt:hover {
+    background-color: red;
+}
+
+.column {
+    padding: 10px;
+    width: 10px;
+}
+
+#log {
+    float: right;
+    margin-right: 10%;
+    width: 350px;
+    height: 650px;
+    background-color: white;
+    color: black;
+}
+#comments {
+    font-size: small;
+    font-weight: lighter;
+    text-align: left;
+    margin: 10px;
+}
