@@ -16,11 +16,11 @@ const pngContentType = {
 
 router.get("/", (req, res) => {
     res.writeHead(httpStatus.StatusCodes.OK, htmlContentType);
-    customReadFile("views/index.html", res);
+    customReadFile("views/home.html", res);
 });
-router.get("/index.html", (req, res) => {
+router.get("/home.html", (req, res) => {
     res.writeHead(httpStatus.StatusCodes.OK, htmlContentType);
-    customReadFile("views/index.html", res);
+    customReadFile("views/home.html", res);
 });
 router.get("/books.html", (req, res) => {
     res.writeHead(httpStatus.StatusCodes.OK, htmlContentType);

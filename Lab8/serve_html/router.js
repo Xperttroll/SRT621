@@ -9,11 +9,11 @@ const routes = {
     GET: {
         "/": (req, res) => {
             res.writeHead(httpStatus.StatusCodes.OK, htmlContentType);
-            customReadFile("views/index.html", res);
+            customReadFile("views/home.html", res);
         },
         "/home.html": (req, res) => {
             res.writeHead(httpStatus.StatusCodes.OK, htmlContentType);
-            customReadFile("views/index.html", res);
+            customReadFile("views/home.html", res);
         },
         "/books.html": (req, res) => {
             res.writeHead(httpStatus.StatusCodes.OK, htmlContentType);
