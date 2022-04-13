@@ -76,5 +76,6 @@ db.once("open", () => {
 
 const Book = require("./models/books")
 
-app.listen(port);
-console.log(`The Server has started and is listening on port numner: ${port}`);
+app.listen(app.get("port"), () => {
+console.log(`The Server has started and is running at http://localhost:${app.get("port")}`);
+});
