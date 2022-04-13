@@ -1,4 +1,3 @@
-const port = 3000;
 const express = require("express")
 const app = express();
 const homeController = require("./controllers/homeController");
@@ -17,6 +16,8 @@ app.use(express.json());
 app.use(express.static("public"))
 
 app.set("view engine", "ejs");
+
+app.set("port", process.env.PORT || 3000);
 
 app.get(
     "/",
