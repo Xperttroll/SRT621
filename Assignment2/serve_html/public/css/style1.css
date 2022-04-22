@@ -1,28 +1,89 @@
 body {
     font-family: "Open Sans", "Arial", "Calibri";
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
+    overflow: auto;
 }
+
+h1 {
+    color: white;
+    position: relative;
+}
+
+@keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+
 .footer {
     position: fixed;
     left: 0;
     bottom: 0;
-    width: 98%;
+    width: 100%;
+    margin: auto;
+    padding: 12px 12px;
     color: white;
     text-align: center;
 }
 tr, td {
     padding: 10px;
     margin: 10px;
+}
+td {
+    border: 1px solid lightgray;
+    border-radius: 5px;
     background-color: white;
 }
 table {
     padding: 10px;
     margin: 10px;
-    background-color: lightgrey;
-    position: fixed;
     left: 0;
     width: 98%;
     text-align: center;
 }
 a:link {
     text-decoration: none;
+    cursor: pointer;
+}
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit] {
+    font-family: "Open Sans", "Arial", "Calibri";
+    font-weight: bolder;
+    width: 10%;
+    background-color: lightgreen;
+    color: black;
+    padding: 14px 20px;
+    margin: auto;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+label {
+    color: white;
+}
+#delete {
+    color: red;
+    background-color: lightgray;
+    font-weight: bolder;
+    padding: 10px;
+}
+#del {
+    background-color: lightgray;
 }
